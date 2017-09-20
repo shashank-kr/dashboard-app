@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Visitor Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,900,100' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/react-with-addons-0.14.7.js"></script>
+    <script src="js/react-dom-0.14.7.js"></script>
+    <script src="js/EventEmitter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser-polyfill.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div style="width:100%;height:30px;background-color:#e3efff;border-bottom: 1px solid #d5d5d6;margin-bottom: 5px;">
+    <div style="height:100px;line-height: 30px;margin-right:20px;color:#64b0cc;font-size: 1.2em;text-align: center">
+        <h1>Data Visualisation</h1>
+    </div>
+</div>
+
+<div id="table-data"></div>
+
+<div id="body"></div>
+
+
+<!-- Scripts-->
+
+<script type="text/babel" src="lib/charts/utils/SVGDefs.jsx"></script>
+<script src="lib/charts/utils/ReactMixins.js"></script>
+<script type="text/babel" src="lib/charts/utils/D3Utils.jsx"></script>
+<script type="text/babel" src="lib/charts/LineChart.jsx"></script>
+<script type="text/babel" src="lib/charts/AreaChart.jsx"></script>
+<script type="text/babel" src="lib/charts/DonutChart.jsx"></script>
+<script type="text/babel" src="lib/charts/StackChart.jsx"></script>
+<script type="text/babel" src="lib/app.jsx"></script>
+
+
+<script type="text/javascript"charset="utf-8">
+    /*d3.text("./data/data.csv", function(datasetText) {
+
+        var parsedCSV = d3.csv.parseRows(datasetText);
+
+        var sampleHTML = d3.select("#table-data")
+            .append("table")
+            .style("border-collapse", "collapse")
+            .style("border", "2px black solid")
+
+            .selectAll("tr")
+            .data(parsedCSV)
+            .enter().append("tr")
+
+            .selectAll("td")
+            .data(function(d){return d;})
+            .enter().append("td")
+            .style("border", "1px black solid")
+            .style("padding", "5px")
+            .on("mouseover", function(){d3.select(this).style("background-color", "aliceblue")})
+            .on("mouseout", function(){d3.select(this).style("background-color", "white")})
+            .text(function(d){return d;})
+            .style("font-size", "12px");
+    });*/
+</script>
+
+</body>
+</html>
